@@ -6,7 +6,7 @@ Reviste es una aplicación web que ofrece una solución integral para el mercado
 
 ## 1. Introducción
 
-Este documento describe las especificaciones técnicas para el desarrollo del proyecto Reviste. 
+Descripción de las especificaciones técnicas para el desarrollo del proyecto. 
 
 ## 2. Lenguajes y Tecnologías
 
