@@ -22,7 +22,6 @@ Descripción de las especificaciones técnicas para el desarrollo del proyecto.
 - **Framework Backend:** FastAPI - Versión 0.68.0
 - **ORM:** SQLAlchemy - Versión 1.4.25
 - **Modelado de Datos:** SQLModel - Versión 0.29.0
-- **Base de Datos:** PostgreSQL - Última Versión Estable
 
 ### 2.3 Frontend
 
@@ -31,7 +30,7 @@ Descripción de las especificaciones técnicas para el desarrollo del proyecto.
 
 ### 2.3 Base de Datos
 
-- **Base de Datos:** MongoDB - Versión 4.4.10
+- **Base de Datos:** PostgreSQL - Última Versión Estable
 
 ### 2.4 Herramientas de Desarrollo
 
