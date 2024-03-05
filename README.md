@@ -2,7 +2,7 @@
 Reviste es una aplicación web que ofrece una solución integral para el mercado de la moda. 
 
 
-Especificaciones Técnicas
+# Especificaciones Técnicas
 
 ## 1. Introducción
 
