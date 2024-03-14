@@ -1,21 +1,14 @@
 from typing import Optional
 from sqlmodel import Field, SQLModel
 
-class BaseProduct(SQLModel):
-    code: Optional[str]
-    name: str = Field(default=None, index=True)
-    description: Optional[str] = Field(default=None, index=True)
-    expiration_date: Optional[str] = Field(default=None, index=True)
-    image: Optional[str] = Field(default="Unidad", index=True)
-    weight: Optional[int] = Field(default=None, index=True)
-    measurement_unit: Optional[str] = Field(default=None, index=True)
-    trademark: Optional[str] = Field(default=None, index=True)
-    observation: Optional[str] = Field(default=None, index=True)
-    warehouse_type: Optional[str] = Field(default='G', index=True)
-    category_fk: int = Field(default=None, foreign_key="pro_category.id")
-
-class Product(BaseProduct, table=True):
-    __tablename__ = "pro_product"
-    code: str = Field(default=None, primary_key=True)
-    register_date: Optional[str] = Field(default=None, index=True)
-    state: Optional[str] = Field(default='A', index=True)
+class Product(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    name: str = Field(max_length=255)
+    description: Optional[str] = Field(default=None)
+    original_price: Optional[float] = Field(default=None)
+    liquidation_price: Optional[float] = Field(default=None)
+    front_view_path: Optional[str] = Field(default=None)
+    back_view_path: Optional[str] = Field(default=None)
+    register_date: Optional[str] = Field(default=None)
+    state: Optional[str] = Field(default='A')
+    category_fk: Optional[int] = Field(default=None, foreign_key="category.id")
